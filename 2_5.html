@@ -1,0 +1,79 @@
+Certainly! Below is an example of an HTML form that gathers information from a customer visiting a departmental store. It includes fields for the customer's name, contact phone number, preferred days of purchasing, favorite item (selected from a list), and suggestions. The form also has "Submit" and "Reset" buttons.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button.reset {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Customer Information Form</h2>
+    <form action="#" method="post" id="customerForm">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Contact Phone No:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="days">Preferred Days of Purchasing:</label>
+        <input type="text" id="days" name="days">
+
+        <label for="favoriteItem">Favorite Item:</label>
+        <select id="favoriteItem" name="favoriteItem">
+            <option value="clothing">Clothing</option>
+            <option value="electronics">Electronics</option>
+            <option value="groceries">Groceries</option>
+            <option value="homeGoods">Home Goods</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="suggestions">Suggestions:</label>
+        <textarea id="suggestions" name="suggestions" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset" class="reset">Reset</button>
+
+    </form>
+
+</body>
+
+</html>
